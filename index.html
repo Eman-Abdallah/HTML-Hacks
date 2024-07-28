@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Hacks</title>
+</head>
+<body>
+    <!-- editable paragraph -->
+    <p contenteditable spellcheck="true">something ronge </p>
+    <!-- datalist -->
+    <input type="text" list="programming">
+    <datalist id="programming">
+        <option value="c++">c++</option>
+        <option value="java">java</option>
+        <option value="javaScript">javaScript</option>
+        <option value="python">python</option>
+    </datalist>
+    <!-- sum of two number inputs -->
+    <form oninput="total.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" value="0" name="num1">
+        <input type="number" value="0" name="num2">
+        <output name="total" ></output>
+    </form>
+    <details>
+        <summary>Click me</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt libero quae unde aspernatur autem voluptate recusandae harum, minus veniam quidem.</p>
+    </details>
+    <fieldset>
+        <legend>profile</legend>
+        <label for="fName">First Name</label>
+        <input type="text" name="fName" id="fName">
+        <label for="lName">Last Name</label>
+        <input type="text" name="lName" id="lName">
+    </fieldset>
+    <picture>
+        <source media="(min-width:800px)" srcset="">
+        <source media="(min-width:300px)" srcset="">
+    </picture>
+    <img src="workplace.jpg" alt="Workplace" usemap="#workMap" width="400" height="379">
+<!-- The <map> tag is used to define an image map. An image map is an image with clickable areas.
+
+The required name attribute of the <map> element is associated with the <img>'s usemap attribute and creates a relationship between the image and the map.
+
+The <map> element contains a number of <area> elements, that defines the clickable areas in the image map. -->
+<map name="workMap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html">
+</map>
+<a href="https://www.w3schools.com/tags/tag_map.asp" target="_blank"> examples of maps on w3 school</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_WR65CNsOi8?si=FVKkYaTnA5FLZX12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
