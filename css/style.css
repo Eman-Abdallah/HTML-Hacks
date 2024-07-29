@@ -23,3 +23,20 @@ have start with and - after or alone */
 [width |='1']{
 
 }
+#example1 {
+  border-radius: 2em / 5em;
+}
+/* is equivalent to:
+border-top-left-radius: 2em 5em;
+border-top-right-radius: 2em 5em;
+border-bottom-right-radius: 2em 5em;
+border-bottom-left-radius: 2em 5em; */
+
+#example2 {
+  border-radius: 2em 1em 4em / 0.5em 3em;
+}
+/* is equivalent to:
+border-top-left-radius: 2em 0.5em;
+border-top-right-radius: 1em 3em;
+border-bottom-right-radius: 4em 0.5em;
+border-bottom-left-radius: 1em 3em; */
