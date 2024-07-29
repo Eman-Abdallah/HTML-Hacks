@@ -40,3 +40,21 @@ border-top-left-radius: 2em 0.5em;
 border-top-right-radius: 1em 3em;
 border-bottom-right-radius: 4em 0.5em;
 border-bottom-left-radius: 1em 3em; */
+
+/*
+border-image-source	The path to the image to be used as a border	
+border-image-slice	How to slice the border image	
+border-image-width	The width of the border image	
+border-image-outset	The amount by which the border image area extends beyond the border box	
+border-image-repeat	Whether the border image should be repeated, rounded or stretched	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit
+short hand syntax
+border-image: source slice width outset repeat|initial|inherit;
+
+*/
+#borderimg1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 50 round;
+}
