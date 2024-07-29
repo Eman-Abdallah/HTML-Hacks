@@ -1,0 +1,25 @@
+/* <element width="1…"> 
+contain 1 as the first value*/
+[width ^='1']{
+
+}
+/* <element width="…1">
+contain 1 as the last value*/
+[width $='1']{
+
+}
+/* <element width="…1…">
+contain 1 at any site*/
+[width *='1']{
+
+}
+/* <element width=" … 1 … ">
+have exactly the value */
+[width ~='1']{
+
+}
+/* <element width="1-…" ">
+have start with and - after or alone */
+[width |='1']{
+
+}
