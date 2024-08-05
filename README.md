@@ -1,4 +1,4 @@
-Most common font file formats:
+##Most common font file formats:
 
 TrueType Fonts (TTF):
 
@@ -24,3 +24,17 @@ Scalable Vector Graphics Fonts (SVG):
 
 Extension: .svg
 SVG fonts use SVG's scalable vector graphics for rendering and are used for their ability to scale well at any size. However, they are not widely supported by modern browsers and are generally not recommended for use.
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/myfont.woff2') format('woff2'),
+         url('fonts/myfont.woff') format('woff'),
+         url('fonts/myfont.ttf') format('truetype'),
+         url('fonts/myfont.eot') format('embedded-opentype'),
+         url('fonts/myfont.svg#MyCustomFont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
