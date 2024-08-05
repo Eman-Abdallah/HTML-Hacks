@@ -26,10 +26,10 @@ SVG fonts use SVG's scalable vector graphics for rendering and are used for thei
 
 // @font-face {
     font-family: 'MyCustomFont';
-    src: url('fonts/myfont.woff2') format('woff2'),
+    src: url('fonts/myfont.eot') format('embedded-opentype'),
+         url('fonts/myfont.woff2') format('woff2'),
          url('fonts/myfont.woff') format('woff'),
          url('fonts/myfont.ttf') format('truetype'),
-         url('fonts/myfont.eot') format('embedded-opentype'),
          url('fonts/myfont.svg#MyCustomFont') format('svg');
     font-weight: normal;
     font-style: normal;
